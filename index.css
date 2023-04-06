@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url("background.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+form {
+    border: 1px solid white;
+    padding: 20px;
+    width: 400px;
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.inputBox {
+    position: relative;
+    height: 40px;
+    margin-bottom: 25px;
+}
+
+.inputBox input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    font-size: 20px;
+    color: white;
+    padding-left: 5px;
+    height: 100%;
+}
+
+.inputBox label {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    transition: .5s;
+}
+
+.inputBox ion-icon {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+}
+
+.inputBox input:focus ~ label,
+.inputBox input:valid ~ label {
+    top: -15px;
+}
+
+.rememberBox {
+    margin: -5px 0px 20px 0px;
+}
+
+.rememberBox p {
+    font-size: 22px;
+    color: white;
+}
+
+.rememberBox p a {
+    text-decoration: none;
+    color: #2034fe;
+}
+
+button {
+    width: 100%;
+    font-size: 25px;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    border: none;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.registerBox p {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+}
+
+.registerBox p a {
+    text-decoration: none;
+    color: #2034fe;
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    form {
+        width: 260px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    .inputBox input {
+        font-size: 18px;
+    }
+    .inputBox ion-icon {
+        font-size: 18px;
+    }
+
+    .rememberBox p {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .registerBox p {
+        font-size: 14px;
+    }
+}
